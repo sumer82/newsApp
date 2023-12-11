@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Web App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="content">
+      <div class="sidebar">
+        <div class="profile">
+          <div class="avtar">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="name">
+            <h2 id="user"></h2>
+          </div>
+        </div>
+        <div class="menu">
+          <button class="btn_login" onclick="location.reload()">News</button>
+          <button class="btn_login" id="post">Post News</button>
+        </div>
+      </div>
+      <div class="newsfeed">
+        <div class="header">
+          <h1>Welcome back</h1>
+        </div>
+        <h3>Latest News</h3>
+        <div class="newsContainer" style="display: none"></div>
+        <div class="postNews">
+          <form id="postNewsForm">
+            <label for="newsTitle">News Title:</label>
+            <input type="text" id="newsTitle" name="newsTitle" required />
+
+            <label for="newsContent">News Content:</label>
+            <textarea
+              id="newsContent"
+              name="newsContent"
+              rows="4"
+              required></textarea>
+
+            <button type="submit" class="btn_login" id="postNewsButton">
+              Post News
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

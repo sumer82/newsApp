@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  height: 100%;
+  /* min-width: 80%; */
+}
+.wrapper {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #e9e9e9;
+  width: 100%;
+}
+
+.right {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  border: none;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+}
+.right img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  object-fit: cover;
+}
+.left {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  /* padding: 15px 5px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  width: 40%;
+  height: 100%;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     padding: 5%; */
+}
+.logo {
+  width: 80%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 5%;
+}
+.header h5 {
+  color: #7d7e80;
+}
+
+.form_container {
+  width: 70%;
+  /* height: 300px; */
+}
+.form_container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form_container form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  /* padding: 5px; */
+  border: none;
+  color: black;
+  font-size: 18px;
+  border-bottom: 2px solid #7d7e80;
+  background: transparent;
+}
+
+.btn_login {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+.footer {
+  color: #7d7e80;
+}
+.footer span #link {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  padding-inline-start: 10px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #333;
+  height: 10%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04aa6d;
+}
+.content {
+  width: 100%;
+  height: 90%;
+  display: flex;
+}
+
+.sidebar {
+  width: 280px;
+  height: 100%;
+  background-color: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.profile {
+  width: 200px;
+  height: 243px;
+  /* background-color: #e9e9e9; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.avtar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ff8533;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.avtar i {
+  width: 100%;
+  height: 100%;
+  font-size: 151px;
+  border-radius: 50%;
+}
+.newsfeed {
+  width: calc(100% - 280px);
+  display: flex;
+  /* align-items: center; */
+  padding: 10px;
+  flex-direction: column;
+}
+.news {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  border: 1px solid grey;
+  padding: 20px;
+  margin-bottom: 5px;
+  background-color: #b8e7ea;
+}
+.newsContainer {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 100px);
+  overflow: auto;
+  
+  margin: auto;
+}
+.newsContainer::-webkit-scrollbar {
+  display: none;
+}
+.postNews {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.postNews form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+.postNews form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 15px;
+  /* padding: 5px; */
+  border: none;
+  color: black;
+  font-size: 18px;
+  border: 2px solid #7d7e80;
+  background: transparent;
+}
